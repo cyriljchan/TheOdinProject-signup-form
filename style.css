@@ -23,14 +23,18 @@ form {
 }
 
 input {
+    border: 2px solid rgb(255, 227, 198);
+    box-shadow: 2px 2px 3px rgba(191, 191, 191, 0.577);
     border-radius: 5px;
+    outline-style: none;
 }
-/* input:active, input:focus {
-    border-color: rgb(255, 85, 0);
+input:active, input:focus {
+    border-color: rgb(194, 140, 82);
+    box-shadow: 2px 2px 3px rgb(129, 129, 129);
 }
 input:invalid {
     border-color: rgb(230, 53, 9);
-} */
+}
 
 .btn {
     background-color: rgb(171, 96, 58);
