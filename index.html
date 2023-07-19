@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project: Sign-Up Page | The Odin Project</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&Montserrat+Alternates:wght@500&display=swap" rel="stylesheet">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="main">
+
+        <div class="left">
+            <div class="left_banner">
+                <img class="banner_img" src="assets/bread-cloud.png" alt="word cloud about bread">
+            </div>
+            <img class="left_bg" src="assets/bg_bread.jpg" alt="sliced bread">
+        </div>
+
+        <div class="right">
+            <div class="text_container right_top">
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor 
+                    incididunt ut labore et dolore magna aliqua. Elementum eu facilisis sed odio 
+                    morbi quis. Id aliquet lectus proin nibh nisl condimentum. Fames ac turpis 
+                    egestas integer eget aliquet. Tincidunt tortor aliquam nulla facilisi cras 
+                    fermentum odio eu. Pellentesque elit ullamcorper dignissim cras tincidunt 
+                    lobortis. Malesuada pellentesque elit eget gravida. Mi in nulla posuere 
+                    sollicitudin aliquam ultrices sagittis. A arcu cursus vitae congue mauris. 
+                    Eu non diam phasellus vestibulum lorem sed.</p>
+            </div>
+            <div class="text_container right_mid">
+                <h3>Pan up here!</h3>
+                <form id="signup" action="" method="post">
+                    <div class="form_field">
+                        <label for="firstname">FIRST NAME</label>
+                        <input type="text" id="firstname" name="firstname" required>
+                    </div>
+
+                    <div class="form_field">
+                        <label for="lastname">LAST NAME</label>
+                        <input type="text" id="lastname" name="lastname" required>
+                    </div>
+                    
+                    <div class="form_field">
+                        <label for="useremail">EMAIL</label>
+                        <input type="email" id="useremail" name="useremail" required>
+                    </div>
+                    
+                    <div class="form_field">
+                        <label for="usernum">PHONE NUMBER</label>
+                        <input pattern="(09)[0-9]{9}" id="usernum" name="usernum" title="09XXYYYXXXX" required>
+                    </div>
+                    
+                    <div class="form_field">
+                        <label for="userpass">PASSWORD</label>
+                        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" id="userpass" name="userpass" title="8 characters containing uppercase and lowercase letters, and numbers" required>
+                    </div>
+
+                    <div class="form_field">
+                        <label for="confirmpass">CONFIRM PASSWORD</label>
+                        <input type="password" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" id="confirmpass" name="confirmpass" required>
+                    </div>
+                </form>
+            </div>
+            <div class="text_container right_bot">
+                <button class="btn" type="submit" form="signup">Create Account</button>
+                <p>Already have an account? <a href="https://www.foo.com">Log in</a></p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
